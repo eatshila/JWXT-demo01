@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="rootBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="club.santubian.controller.MainController">
+   <top>
+      <AnchorPane fx:id="topPane" styleClass="form-title" stylesheets="@../css/jfoenix.css" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton fx:id="btnTitleX" prefHeight="35.0" prefWidth="40.0" ripplerFill="RED" text="X" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="form-title-button" />
+                  <String fx:value="form-title-buttonX" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton fx:id="btnTitle_" prefHeight="35.0" prefWidth="40.0" ripplerFill="WHITE" text="—" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="41.0" AnchorPane.topAnchor="0.0">
+               <styleClass>
+                  <String fx:value="form-title-button_" />
+                  <String fx:value="form-title-button" />
+               </styleClass></JFXButton>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <StackPane styleClass="grid-table" stylesheets="@../css/jfoenix.css" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="10.0" left="10.0" />
+         </padding>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </StackPane>
+   </left>
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" styleClass="grid-table" stylesheets="@../css/jfoenix.css" BorderPane.alignment="CENTER">
+         <center>
+            <GridPane fx:id="gridTable" hgap="10.0" styleClass="grid-table" stylesheets="@../css/jfoenix.css" vgap="10.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="118.0" minWidth="10.0" prefWidth="35.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="118.0" minWidth="10.0" prefWidth="111.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <padding>
+                  <Insets left="20.0" right="10.0" />
+               </padding>
+               <children>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="grid-left-stackpane" GridPane.columnIndex="1">
+                     <children>
+                        <Label text="星期一" />
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="grid-left-stackpane" GridPane.columnIndex="2">
+                     <children>
+                        <Label text="星期二" />
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="grid-left-stackpane" GridPane.columnIndex="3">
+                     <children>
+                        <Label text="星期三" />
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="grid-left-stackpane" GridPane.columnIndex="4">
+                     <children>
+                        <Label text="星期四" />
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="grid-left-stackpane" GridPane.columnIndex="5">
+                     <children>
+                        <Label text="星期五" />
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="grid-left-stackpane" GridPane.columnIndex="6">
+                     <children>
+                        <Label text="星期六" />
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="grid-left-stackpane" GridPane.columnIndex="7">
+                     <children>
+                        <Label text="星期天" />
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="grid-left-stackpane" GridPane.rowIndex="1">
+                     <children>
+                        <Label text="第一节" />
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" />
+                  <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="grid-left-stackpane" GridPane.rowIndex="2">
+                     <children>
+                        <Label text="第二节" />
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="grid-left-stackpane" GridPane.rowIndex="3">
+                     <children>
+                        <Label text="第三节" />
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="grid-left-stackpane" GridPane.rowIndex="4">
+                     <children>
+                        <Label text="第四节" />
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="grid-left-stackpane" GridPane.rowIndex="5">
+                     <children>
+                        <Label text="第五节" />
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="6">
+                     <children>
+                        <Label text=" " />
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="grid-left-stackpane" GridPane.rowIndex="7">
+                     <children>
+                        <Label text="第一节" />
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="grid-left-stackpane" GridPane.rowIndex="8">
+                     <children>
+                        <Label text="第二节" />
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="grid-left-stackpane" GridPane.rowIndex="9">
+                     <children>
+                        <Label text="第三节" />
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="grid-left-stackpane" GridPane.rowIndex="10">
+                     <children>
+                        <Label text="第四节" />
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="grid-left-stackpane" GridPane.rowIndex="11">
+                     <children>
+                        <Label text="第五节" />
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="12">
+                     <children>
+                        <Label text=" " />
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="grid-left-stackpane" GridPane.rowIndex="13">
+                     <children>
+                        <Label text="第一节" />
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="grid-left-stackpane" GridPane.rowIndex="14">
+                     <children>
+                        <Label text="第二节" />
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="grid-left-stackpane" GridPane.rowIndex="15">
+                     <children>
+                        <Label text="第三节" />
+                     </children>
+                  </StackPane>
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </BorderPane.margin>
+            </GridPane>
+         </center>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <left>
+            <BorderPane BorderPane.alignment="CENTER" />
+         </left>
+      </BorderPane>
+   </center>
+</BorderPane>

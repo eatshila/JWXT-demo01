@@ -1,0 +1,57 @@
+.login-button {
+    -jfx-button-type: RAISED;
+    -fx-background-color: rgb(81,100,174);
+    -fx-text-fill: white;
+
+}
+.login-button:hover{
+    -fx-background-color: rgb(45, 64, 144);
+}
+.form-title-button{
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+}
+.form-title-buttonX:hover{
+    -fx-opacity: 0.6;
+    -fx-background-color: #ea5454;
+}
+.form-title-button_:hover{
+    -fx-opacity: 0.5;
+    -fx-background-color: rgb(214, 244, 250);
+}
+.form-title{
+    -fx-background-color: rgb(75, 107, 232);
+    -fx-text-fill: white;
+}
+.grid-table{
+    -fx-background-color: #2b2b2b;
+    -fx-text-fill: #98af98;
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}
+.text-area *.text{
+    -fx-text-alignment: center;
+}
+/*.grid-table *.text-area{*/
+/*    -fx-background-color: #2b2b2b;*/
+/*    -fx-text-fill: #66ccff;*/
+/*    -fx-text-alignment: center;*/
+/*    -fx-alignment: center;*/
+/*}*/
+/*JFXTextArea{*/
+/*    -fx-text-alignment: center;*/
+/*    -fx-alignment: center;*/
+/*}*/
+Label{
+    -fx-text-fill: #aeb0b2;
+}
+.grid-left{
+    -fx-border-width:2;
+    -fx-border-color: #515151;
+}
+.grid-left-stackpane{
+    -fx-border-color: #515151;
+}
+.text-area .scroll-bar:vertical:disabled {
+    -fx-opacity: 0;
+}
